@@ -75,10 +75,10 @@ export default function ServiceLayout({ service }) {
         {data.inclusions?.length > 0 && (
           <section className="mb-12 sm:mb-16 md:mb-20" id="inclusions">
             <div className="text-center mb-8 sm:mb-10 md:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0f3b66] mb-3 sm:mb-4 font-serif">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#09a3db] mb-3 sm:mb-4 font-serif">
                 What's Included
               </h2>
-              <div className="w-16 sm:w-20 md:w-24 h-1 bg-[#0f3b66] mx-auto"></div>
+              <div className="w-16 sm:w-20 md:w-24 h-1 bg-[#09a3db] mx-auto"></div>
               <p className="text-gray-600 mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base">
                 Our comprehensive service includes everything you need for success
               </p>
@@ -90,7 +90,7 @@ export default function ServiceLayout({ service }) {
                   className="flex items-start bg-gradient-to-r from-gray-50 to-white p-4 sm:p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group"
                 >
                   <div className="flex-shrink-0 mr-3 sm:mr-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#0f3b66] rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#09a3db] rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                       <svg className="w-4 h-4 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -107,10 +107,10 @@ export default function ServiceLayout({ service }) {
         {data.process?.length > 0 && (
           <section className="mb-12 sm:mb-16 md:mb-20" id="process">
             <div className="text-center mb-8 sm:mb-10 md:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0f3b66] mb-3 sm:mb-4 font-serif">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#09a3db] mb-3 sm:mb-4 font-serif">
                 Our Process
               </h2>
-              <div className="w-16 sm:w-20 md:w-24 h-1 bg-[#0f3b66] mx-auto"></div>
+              <div className="w-16 sm:w-20 md:w-24 h-1 bg-[#09a3db] mx-auto"></div>
               <p className="text-gray-600 mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base">
                 A simple, streamlined process designed for your convenience
               </p>
@@ -124,12 +124,12 @@ export default function ServiceLayout({ service }) {
                   <div key={idx} className="relative mb-8 sm:mb-10 md:mb-12 last:mb-0">
                     <div className="flex items-start">
                       <div className="flex-shrink-0 z-10">
-                        <div className="w-12 h-12 sm:w-14 sm:h-16 bg-[#0f3b66] rounded-full flex items-center justify-center text-white font-bold text-lg sm:text-xl shadow-lg">
+                        <div className="w-12 h-12 sm:w-14 sm:h-16 bg-[#09a3db] rounded-full flex items-center justify-center text-white font-bold text-lg sm:text-xl shadow-lg">
                           {String(p.step).padStart(2, '0')}
                         </div>
                       </div>
                       <div className="ml-6 sm:ml-8 md:ml-12 flex-1 bg-white rounded-xl p-4 sm:p-6 md:p-8 shadow-md border border-gray-100 hover:shadow-xl transition-shadow">
-                        <h3 className="text-xl sm:text-2xl font-bold text-[#0f3b66] mb-3 sm:mb-4">
+                        <h3 className="text-xl sm:text-2xl font-bold text-[#09a3db] mb-3 sm:mb-4">
                           {p.title}
                         </h3>
                         <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
@@ -148,10 +148,10 @@ export default function ServiceLayout({ service }) {
         {data.gallery?.length > 0 && (
           <section className="mb-12 sm:mb-16 md:mb-20" id="gallery">
             <div className="text-center mb-8 sm:mb-10 md:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0f3b66] mb-3 sm:mb-4 font-serif">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#09a3db] mb-3 sm:mb-4 font-serif">
                 Gallery
               </h2>
-              <div className="w-16 sm:w-20 md:w-24 h-1 bg-[#0f3b66] mx-auto"></div>
+              <div className="w-16 sm:w-20 md:w-24 h-1 bg-[#09a3db] mx-auto"></div>
               <p className="text-gray-600 mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base">
                 Take a look at our work and facilities
               </p>
@@ -181,7 +181,7 @@ export default function ServiceLayout({ service }) {
         {/* Contact Section */}
         {data.contact && (
        <section className="mt-12 sm:mt-16 md:mt-20">
-  <div className="bg-gradient-to-r from-[#0f3b66] to-[#1a5490] rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 lg:p-16 text-center shadow-xl relative overflow-hidden">
+  <div className="bg-gradient-to-r from-[#09a3db] to-[#1a5490] rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 lg:p-16 text-center shadow-xl relative overflow-hidden">
     <div className="absolute top-0 right-0 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-white/10 rounded-full -mr-16 sm:-mr-24 md:-mr-32 -mt-16 sm:-mt-24 md:-mt-32"></div>
     <div className="absolute bottom-0 left-0 w-24 h-24 sm:w-36 sm:h-36 md:w-48 md:h-48 bg-white/10 rounded-full -ml-12 sm:-ml-18 md:-ml-24 -mb-12 sm:-mb-18 md:-mb-24"></div>
     
@@ -199,7 +199,7 @@ export default function ServiceLayout({ service }) {
           <p className="text-white font-medium text-sm sm:text-base md:text-lg">{data.contact}</p>
         </div>
 
-       <Link to='/contact'><button className="bg-white text-[#0f3b66] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-gray-100 shadow-lg transform hover:scale-105 text-sm sm:text-base w-full sm:w-auto">
+       <Link to='/contact'><button className="bg-white text-[#09a3db] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-gray-100 shadow-lg transform hover:scale-105 text-sm sm:text-base w-full sm:w-auto">
           Contact Us Now
         </button></Link> 
       </div>

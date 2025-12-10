@@ -126,7 +126,7 @@ const AboutPage = () => {
               className="text-3xl sm:text-4xl md:text-5xl font-bold text-sapphire-blue text-gray-900 mb-4 font-serif"
               variants={fadeInUpVariants}
             >
-              Our Comprehensive <span className=' text-[#0f3b66] '> Services</span>
+              Our Comprehensive <span className=' text-[#09a3db] '> Services</span>
             </motion.h2>
             <motion.div 
               className="w-16 sm:w-24 h-1 bg-sapphire-accent mx-auto rounded-full mb-6"
@@ -147,7 +147,7 @@ const AboutPage = () => {
             >
               {[
                 { 
-                  icon: <Home className="w-8 h-8 text-[#0f3b66]" />, 
+                  icon: <Home className="w-8 h-8 text-[#09a3db]" />, 
                   title: 'Dead Body Freezer Box', 
                   description: 'We provide 24×7 dead body freezer box services to preserve the body safely for long durations with proper temperature control and hygienic equipment.',
                   features: [
@@ -158,7 +158,7 @@ const AboutPage = () => {
                   ]
                 },
                 { 
-                  icon: <Heart className="w-8 h-8 text-[#0f3b66]" />, 
+                  icon: <Heart className="w-8 h-8 text-[#09a3db]" />, 
                   title: 'Funeral Services', 
                   description: 'We offer complete funeral arrangements with dignity, ensuring all rituals and requirements are handled smoothly and respectfully.',
                   features: [
@@ -169,7 +169,7 @@ const AboutPage = () => {
                   ]
                 },
                 { 
-                  icon: <Shield className="w-8 h-8 text-[#0f3b66]" />, 
+                  icon: <Shield className="w-8 h-8 text-[#09a3db]" />, 
                   title: 'Ambulance Services', 
                   description: 'Emergency and non-emergency ambulance services with trained staff for safe and timely transportation of patients or deceased.',
                   features: [
@@ -189,12 +189,12 @@ const AboutPage = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-sapphire-blue to-sapphire-lighter rounded-2xl flex items-center justify-center mb-6 text-white shadow-lg">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold mb-4 text-[#0f3b66]">{service.title}</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold mb-4 text-[#09a3db]">{service.title}</h3>
                   <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">{service.description}</p>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center gap-2 text-gray-600 text-sm sm:text-base">
-                        <CheckCircle className="w-4 h-4 text-[#0f3b66] flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 text-[#09a3db] flex-shrink-0" />
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -215,7 +215,7 @@ const AboutPage = () => {
               variants={staggerContainer}
             >
               <motion.div variants={fadeInUpVariants}>
-                <h2 className="text-3xl md:text-4xl font-bold text-sapphire-blue mb-6 text-[#0f3b66] font-serif">Our Guiding Principles</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-sapphire-blue mb-6 text-[#09a3db] font-serif">Our Guiding Principles</h2>
                 <p className="text-base sm:text-lg text-gray-700 mb-8">
                   At DignityCare, our work is guided by a deep commitment to compassion, integrity, and excellence.
                 </p>
@@ -226,11 +226,11 @@ const AboutPage = () => {
                     { icon: <HandHeart className="w-6 h-6" />, title: 'Our Values', desc: 'We operate with compassion, dignity, and integrity, ensuring every family feels supported.' },
                   ].map((item, index) => (
                     <motion.div key={index} variants={fadeInUpVariants} className="flex gap-4">
-                      <div className="w-12 h-12 bg-sapphire-blue/10 rounded-xl flex items-center justify-center flex-shrink-0 text-sapphire-blue text-[#0f3b66] font-serif">
+                      <div className="w-12 h-12 bg-sapphire-blue/10 rounded-xl flex items-center justify-center flex-shrink-0 text-sapphire-blue text-[#09a3db] font-serif">
                         {item.icon}
                       </div>
                       <div>
-                        <h3 className="text-lg sm:text-xl font-semibold mb-1 text-[#0f3b66] font-serif">{item.title}</h3>
+                        <h3 className="text-lg sm:text-xl font-semibold mb-1 text-[#09a3db] font-serif">{item.title}</h3>
                         <p className="text-gray-600 text-sm sm:text-base">{item.desc}</p>
                       </div>
                     </motion.div>
@@ -282,7 +282,7 @@ const AboutPage = () => {
 
               {/* Content on the RIGHT */}
               <motion.div variants={fadeInUpVariants} className="order-1 lg:order-2">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-[#0f3b66] font-serif">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-[#09a3db] font-serif">
                   We Are Here For You
                 </h2>
 
@@ -300,7 +300,7 @@ const AboutPage = () => {
                     variants={fadeInUpVariants}
                     whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(15, 59, 102, 0.2)" }}
                     whileTap={{ scale: 0.98 }}
-                    className="bg-[#0f3b66] text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg transition-all duration-300 flex items-center gap-3 group w-full sm:w-auto justify-center"
+                    className="bg-[#09a3db] text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg transition-all duration-300 flex items-center gap-3 group w-full sm:w-auto justify-center"
                   >
                     Get In Touch
                     <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"

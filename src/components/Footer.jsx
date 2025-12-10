@@ -42,7 +42,7 @@ const Footer = () => {
     <>
       <style jsx>{`
         :root {
-          --primary-color: #0f3b66;
+          --primary-color: #09a3db;
           --primary-light: #1e5a94;
           --primary-lighter: #2d7bc2;
           --primary-accent: #4299e1;
@@ -68,17 +68,17 @@ const Footer = () => {
           position: relative;
           display: inline-block;
         }
-        
-        .footer-link::after {
-          content: '';
-          position: absolute;
-          width: 0;
-          height: 2px;
-          bottom: -2px;
-          left: 0;
-          background-color: var(--primary-accent);
-          transition: width 0.3s ease;
-        }
+      .footer-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffffff;  /* Updated color */
+  transition: width 0.3s ease;
+}
+
         
       .footer-link:hover {
   color: #ffffff;

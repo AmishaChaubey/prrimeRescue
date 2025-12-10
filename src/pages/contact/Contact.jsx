@@ -58,7 +58,7 @@ export default function ContactPage() {
   };
 
   const inputC =
-    "w-full rounded-xl border border-gray-200 focus:border-[#0f3b66] focus:ring-2 focus:ring-[#1e5a94] outline-none px-4 py-3 bg-white/80 placeholder:text-gray-400";
+    "w-full rounded-xl border border-gray-200 focus:border-[#09a3db] focus:ring-2 focus:ring-[#1e5a94] outline-none px-4 py-3 bg-white/80 placeholder:text-gray-400";
 
   const CalendarComponent = () => {
     const [currentMonth, setCurrentMonth] = useState(new Date());
@@ -116,11 +116,11 @@ export default function ContactPage() {
               onClick={() => !isPastDate(date) && handleDateChange(date.toISOString().split('T')[0])}
               disabled={isPastDate(date)}
               className={`
-                p-1 sm:p-2 text-xs sm:text-sm rounded hover:bg-[#0f3b66]/10 transition-colors
-                ${isToday(date) ? 'bg-[#1e5a94]/20 text-[#0f3b66] font-semibold' : ''}
+                p-1 sm:p-2 text-xs sm:text-sm rounded hover:bg-[#09a3db]/10 transition-colors
+                ${isToday(date) ? 'bg-[#1e5a94]/20 text-[#09a3db] font-semibold' : ''}
                 ${!isCurrentMonth(date) ? 'text-gray-300' : 'text-gray-700'}
-                ${isPastDate(date) ? 'text-gray-300 cursor-not-allowed' : 'hover:bg-[#0f3b66]/10'}
-                ${form.date === date.toISOString().split('T')[0] ? 'bg-[#0f3b66] text-white' : ''}
+                ${isPastDate(date) ? 'text-gray-300 cursor-not-allowed' : 'hover:bg-[#09a3db]/10'}
+                ${form.date === date.toISOString().split('T')[0] ? 'bg-[#09a3db] text-white' : ''}
               `}
             >
               {date.getDate()}
@@ -192,8 +192,8 @@ export default function ContactPage() {
           <div className="order-1 lg:order-2">
             <div className="bg-white rounded-2xl sm:rounded-3xl shadow-xl p-4 sm:p-6 md:p-8 lg:p-10">
               <div className="mb-4 sm:mb-6">
-                <p className="text-sm font-medium text-[#0f3b66]">Contact Us</p>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#0f3b66] to-[#1e5a94] bg-clip-text text-transparent font-serif">
+                <p className="text-sm font-medium text-[#09a3db]">Contact Us</p>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#09a3db] to-[#1e5a94] bg-clip-text text-transparent font-serif">
                   Let's Assist You
                 </h1>
                 <p className="mt-1 sm:mt-2 text-sm sm:text-base text-gray-500">
@@ -353,7 +353,7 @@ export default function ContactPage() {
                   <button
                     type="button"
                     onClick={handleSubmit}
-                    className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-xl bg-[#0f3b66] text-white font-semibold shadow-lg hover:bg-[#1e5a94] active:scale-[.99] transition text-sm sm:text-base"
+                    className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-xl bg-[#09a3db] text-white font-semibold shadow-lg hover:bg-[#1e5a94] active:scale-[.99] transition text-sm sm:text-base"
                   >
                     <Send size={16} className="sm:w-5 sm:h-5" /> Send Message
                   </button>
@@ -366,7 +366,7 @@ export default function ContactPage() {
 
       {/* Map Section */}
       <div className="px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900  mb-3 sm:mb-4 md:mb-5 font-serif">Find<span className="text-[#0f3b66]"> Our Facility</span></h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900  mb-3 sm:mb-4 md:mb-5 font-serif">Find<span className="text-[#09a3db]"> Our Facility</span></h2>
         <p className="mb-6 sm:mb-8 md:mb-10 text-center text-gray-500 text-sm sm:text-base">
           Visit our facility for professional funeral support and dead body freezer services.
         </p>

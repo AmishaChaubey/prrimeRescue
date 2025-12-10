@@ -21,7 +21,7 @@ export default function BlogDetail() {
           <p className="text-gray-600 mb-8">The blog post you're looking for doesn't exist or has been removed.</p>
           <button
             onClick={() => navigate("/blog")}
-            className="px-6 py-3 bg-[#0f3b66] text-white rounded-lg hover:bg-[#0f57a0] transition-colors duration-300 flex items-center justify-center gap-2 mx-auto"
+            className="px-6 py-3 bg-[#09a3db] text-white rounded-lg hover:bg-[#0f57a0] transition-colors duration-300 flex items-center justify-center gap-2 mx-auto"
           >
             <ArrowLeft size={18} />
             Back to Blog
@@ -132,7 +132,7 @@ export default function BlogDetail() {
         <div className="mt-6 sm:mt-8 text-center">
           <button
             onClick={() => navigate("/blog")}
-            className="flex items-center gap-2 text-white p-3 sm:p-4 rounded-lg hover:bg-[#0f57a0] transition-colors duration-300 bg-[#0f3b66] mx-auto"
+            className="flex items-center gap-2 text-white p-3 sm:p-4 rounded-lg hover:bg-[#0f57a0] transition-colors duration-300 bg-[#09a3db] mx-auto"
           >
             <ArrowLeft size={18} />
             <span className="font-medium">Back to Blog</span>

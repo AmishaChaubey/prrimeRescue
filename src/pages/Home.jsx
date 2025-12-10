@@ -58,7 +58,7 @@ export default function FuneralHomePage() {
       title: "Ambulance",
       description:
         "Fast and reliable ambulance support to assist families in critical moments",
-      color: "bg-[#0f3b66]",
+      color: "bg-[#09a3db]",
       link: "/services/ambulance-services",
     },
 
@@ -67,7 +67,7 @@ export default function FuneralHomePage() {
       title: "Dead Body Freezer Box",
       description:
         "Advanced preservation technology ensuring dignified care with temperature-controlled units available for rent.",
-      color: "bg-[#0f3b66]",
+      color: "bg-[#09a3db]",
       link: "/services/dead-body-freezer-box",
     },
 
@@ -76,7 +76,7 @@ export default function FuneralHomePage() {
       title: "Funeral Services",
       description:
         "Comprehensive funeral arrangements tailored to honor your loved one's memory with compassion and respect.",
-      color: "bg-[#0f3b66]",
+      color: "bg-[#09a3db]",
       link: "/services/funeral-services",
     },
   ];
@@ -123,7 +123,7 @@ export default function FuneralHomePage() {
           </div>
           <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8 lg:mb-10 leading-tight">
             Honoring Lives with{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">
+            <span className="text-transparent bg-clip-text bg-[#09a3db]">
               Dignity & Care
             </span>
           </h1>
@@ -162,13 +162,13 @@ export default function FuneralHomePage() {
             {/* Content */}
             <div className="space-y-4 sm:space-y-6 lg:space-y-8">
               <div className="inline-block">
-                <div className="bg-blue-100 text-[#0f3b66] rounded-full px-4 sm:px-5 py-2 text-xs sm:text-sm font-semibold shadow-sm">
+                <div className="bg-blue-100 text-[#09a3db] rounded-full px-4 sm:px-5 py-2 text-xs sm:text-sm font-semibold shadow-sm">
                   About Us
                 </div>
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 NCR Funeral Services & Dead Body{" "}
-                <span className="text-[#0f3b66]">Freezer Box on Rent</span>
+                <span className="text-[#09a3db]">Freezer Box on Rent</span>
               </h2>
               <div className="space-y-3 sm:space-y-4 text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
                 <p>
@@ -200,16 +200,16 @@ export default function FuneralHomePage() {
                     className="group relative bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
                   >
                     <div className="absolute top-0 right-0 w-16 h-16 sm:w-20 sm:h-20 bg-blue-50 rounded-full -mr-8 -mt-8 sm:-mr-10 sm:-mt-10 group-hover:scale-150 transition-transform duration-500"></div>
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#0f3b66]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#09a3db]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div className="relative z-10">
-                      <h3 className="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold text-[#0f3b66] mb-1 group-hover:text-blue-700 transition-colors">
+                      <h3 className="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold text-[#09a3db] mb-1 group-hover:text-blue-700 transition-colors">
                         {stat.title}
                       </h3>
                       <p className="text-xs sm:text-sm text-gray-600 font-medium">
                         {stat.subtitle}
                       </p>
                     </div>
-                    <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#0f3b66] to-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#09a3db] to-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                   </div>
                 ))}
               </div>
@@ -223,10 +223,10 @@ export default function FuneralHomePage() {
                   alt="Funeral Services"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0f3b66]/20 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#09a3db]/20 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="absolute -top-4 -right-4 w-16 h-16 sm:w-24 sm:h-24 bg-blue-100 rounded-full blur-2xl opacity-50 -z-10"></div>
-              <div className="absolute -bottom-4 -left-4 w-20 h-20 sm:w-32 sm:h-32 bg-[#0f3b66]/10 rounded-full blur-2xl opacity-50 -z-10"></div>
+              <div className="absolute -bottom-4 -left-4 w-20 h-20 sm:w-32 sm:h-32 bg-[#09a3db]/10 rounded-full blur-2xl opacity-50 -z-10"></div>
             </div>
           </div>
         </section>
@@ -242,13 +242,13 @@ export default function FuneralHomePage() {
         >
           <div className="text-center mb-12 sm:mb-16">
             <div className="inline-block">
-              <div className="bg-blue-100 text-[#0f3b66] rounded-full px-4 py-1 text-sm font-semibold mb-4 sm:mb-6">
+              <div className="bg-blue-100 text-[#09a3db] rounded-full px-4 py-1 text-sm font-semibold mb-4 sm:mb-6">
                 Our Services
               </div>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 font-serif">
               Comprehensive{" "}
-              <span className="bg-clip-text text-[#0f3b66]">Services</span>
+              <span className="bg-clip-text text-[#09a3db]">Services</span>
             </h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
               Comprehensive funeral and preservation services designed to meet
@@ -278,7 +278,7 @@ export default function FuneralHomePage() {
                 </p>
                 <Link
                   to={service.link}
-                  className="mt-4 sm:mt-6 flex items-center text-[#0f3b66] font-medium group-hover:text-blue-700 transition-colors"
+                  className="mt-4 sm:mt-6 flex items-center text-[#09a3db] font-medium group-hover:text-blue-700 transition-colors"
                 >
                   Learn more
                   <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
@@ -303,25 +303,25 @@ export default function FuneralHomePage() {
       >
         <div className="absolute inset-0 bg-[url('/c1.jpg')] bg-cover bg-center"></div>
         <div className="relative z-10 max-w-7xl mx-auto flex justify-end">
-          <div className="bg-white/40 backdrop-blur-lg rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-2xl border border-white/20 max-w-xl lg:max-w-2xl w-full">
+          <div className="bg-white/50 backdrop-blur-lg rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-2xl border border-white/20 max-w-xl lg:max-w-2xl w-full">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-4 sm:gap-6">
               <div className="text-center lg:text-left">
                 <div className="flex items-center gap-3 mb-2">
-                  <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-[#0f3b66]" />
-                  <span className="bg-white/20 backdrop-blur-sm text-[#0f3b66] rounded-full px-3 py-1 text-xs sm:text-sm font-semibold">
+                  <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-[#e24065]" />
+                  <span className="bg-white/20 backdrop-blur-sm text-[#e24065] rounded-full px-3 py-1 text-xs sm:text-sm font-semibold">
                     Available 24/7
                   </span>
                 </div>
-                <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0f3b66] mb-1">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#e24065] mb-1">
                   We're Here For You
                 </h2>
-                <p className="text-blue-800 text-sm sm:text-base">
+                <p className="text-[#09a3db] text-sm sm:text-base">
                   Compassionate support when you need it most
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
-                <a href="tel:+918888888888">
+                <a href="tel:+917050988589">
                   <button className="bg-transparent border-2 border-white/50 text-white px-5 py-2 sm:py-3 rounded-full font-semibold hover:bg-white/10 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base w-full sm:w-auto">
                     <Phone className="w-4 h-4" />
                     Call Us
@@ -333,15 +333,15 @@ export default function FuneralHomePage() {
             <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-white/20 flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 text-white text-xs sm:text-sm">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>+91 99999999</span>
+                <span>+91 7050988589</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>info@funeralservices.com</span>
+                <span>info@primerescue.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>123 Memorial Ave</span>
+                <span>Galaxy Diamond Plaza</span>
               </div>
             </div>
           </div>
@@ -360,13 +360,13 @@ export default function FuneralHomePage() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-12 sm:mb-16">
             <div className="inline-block">
-              <div className="bg-blue-100 text-[#0f3b66] rounded-full px-4 py-1 text-sm font-semibold mb-4 sm:mb-6">
+              <div className="bg-blue-100 text-[#09a3db] rounded-full px-4 py-1 text-sm font-semibold mb-4 sm:mb-6">
                 Testimonials
               </div>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 font-serif">
               What Families{" "}
-              <span className="bg-clip-text text-[#0f3b66]">Say About Us</span>
+              <span className="bg-clip-text text-[#09a3db]">Say About Us</span>
             </h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
               Read testimonials from families we've had the privilege to serve
@@ -377,7 +377,7 @@ export default function FuneralHomePage() {
             <div className="md:w-1/3 flex justify-center">
               <div className="relative">
                 <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-white shadow-xl">
-                  <div className="w-full h-full bg-[#0f3b66] flex items-center justify-center text-white text-2xl sm:text-3xl lg:text-4xl font-bold">
+                  <div className="w-full h-full bg-[#09a3db] flex items-center justify-center text-white text-2xl sm:text-3xl lg:text-4xl font-bold">
                     {testimonials[activeTestimonial].name
                       .split(" ")
                       .map((n) => n[0])
@@ -416,7 +416,7 @@ export default function FuneralHomePage() {
                     key={index}
                     className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-colors duration-300 ${
                       index === activeTestimonial
-                        ? "bg-[#0f3b66]"
+                        ? "bg-[#09a3db]"
                         : "bg-gray-300"
                     }`}
                     onClick={() => setActiveTestimonial(index)}
