@@ -68,5 +68,74 @@ export const services = [
       "/service-img/ambulance3.jpg",
     ],
     contact: "+91-1234567890"
-  }
+  },
+    {
+    slug: "ICU Ambulance Services",
+    title: "ICU Ambulance  Services",
+    heroImage: "/ncr/30.png",
+    overview: "Our ambulance services provide safe and dignified transport for the deceased.",
+    inclusions: [
+      "24/7 ambulance availability",
+      "Professional drivers & helpers",
+      "Sanitized vehicle",
+      "Timely pick-up & drop",
+    ],
+    process: [
+      { step: 1, title: "Call & Request", desc: "Request ambulance for transportation." },
+      { step: 2, title: "Pickup", desc: "Reach the location and safely transport." },
+      { step: 3, title: "Delivery", desc: "Deliver to cremation ground or hospital." }
+    ],
+    gallery: [
+      "/service-img/ambulance1.jpg",
+      "/service-img/ambulance2.jpg",
+      "/service-img/ambulance3.jpg",
+    ],
+    contact: "+91-1234567890"
+  },
+    {
+    slug: "Embalming Services",
+    title: "Embalming Services",
+    heroImage: "/ncr/30.png",
+    overview: "Our ambulance services provide safe and dignified transport for the deceased.",
+    inclusions: [
+      "24/7 ambulance availability",
+      "Professional drivers & helpers",
+      "Sanitized vehicle",
+      "Timely pick-up & drop",
+    ],
+    process: [
+      { step: 1, title: "Call & Request", desc: "Request ambulance for transportation." },
+      { step: 2, title: "Pickup", desc: "Reach the location and safely transport." },
+      { step: 3, title: "Delivery", desc: "Deliver to cremation ground or hospital." }
+    ],
+    gallery: [
+      "/service-img/ambulance1.jpg",
+      "/service-img/ambulance2.jpg",
+      "/service-img/ambulance3.jpg",
+    ],
+    contact: "+91-1234567890"
+  },
+    {
+    slug: "Prayer-Meeting",
+    title: "Prayer-Meeting",
+    heroImage: "/ncr/30.png",
+    overview: "Our ambulance services provide safe and dignified transport for the deceased.",
+    inclusions: [
+      "24/7 ambulance availability",
+      "Professional drivers & helpers",
+      "Sanitized vehicle",
+      "Timely pick-up & drop",
+    ],
+    process: [
+      { step: 1, title: "Call & Request", desc: "Request ambulance for transportation." },
+      { step: 2, title: "Pickup", desc: "Reach the location and safely transport." },
+      { step: 3, title: "Delivery", desc: "Deliver to cremation ground or hospital." }
+    ],
+    gallery: [
+      "/service-img/ambulance1.jpg",
+      "/service-img/ambulance2.jpg",
+      "/service-img/ambulance3.jpg",
+    ],
+    contact: "+91-1234567890"
+  },
 ];
