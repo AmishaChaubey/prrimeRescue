@@ -25,22 +25,26 @@ export default function BlogList() {
     <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/70 to-transparent"></div>
   </div>
 
-  <div className={`relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
-    <div className="w-full md:w-3/4 lg:w-2/3">
-      <div className="inline-block mb-2">
-       </div>
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-5 font-serif leading-tight drop-shadow-lg">
-        Our <span className="text-blue-300">Blogs</span>
-      </h1>
-      <div className="h-1 w-20 bg-blue-300 mb-4 sm:mb-6"></div>
-      <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl drop-shadow">
-       Tough times may slow you down, but they can never stop the strength that lives inside you.
-      </p>
+ <div
+  className={`relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 h-full flex items-center transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
+>
+  <div className="w-full md:w-3/4 lg:w-2/3 ml-4 sm:ml-6 md:ml-12 lg:ml-16 mb-7">
+    <div className="inline-block mb-2">
     </div>
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-5 font-serif leading-tight drop-shadow-lg">
+      Our <span className="text-blue-300">Blogs</span>
+    </h1>
+    <div className="h-1 w-20 bg-blue-300 mb-4 sm:mb-6"></div>
+    <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl drop-shadow">
+      Tough times may slow you down, but they can never stop the strength that lives inside you.
+    </p>
   </div>
 </div>
 
+</div>
+
       {/* Blog Grid */}
+      <div className="">
       <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {blogData.map((blog) => (
@@ -77,6 +81,7 @@ export default function BlogList() {
           ))}
         </div>
       </main>
+      </div>
     </div>
   );
 }

@@ -229,8 +229,8 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {/* About Section */}
             <div className="lg:col-span-1">
-              <div className="flex items-center mb-6">
-                <h3 className="text-xl font-bold footer-text">NCR Funeral & Deadbody Freezerbox</h3>
+              <div className="flex items-center  w-36 h-20">
+                <img src='/PrimeRescue-logo.png'/>
               </div>
               <p className="footer-text-muted mb-6 leading-relaxed">
                 Providing compassionate funeral services and preservation solutions with dignity and respect for over two decades.
@@ -266,13 +266,10 @@ const Footer = () => {
                   <ChevronRight className="w-4 h-4 mr-2 text-white" />
                   <Link to="/about" className="footer-link">About Us</Link>
                 </li>
+              
                 <li className="flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2 text-white" />
-                  <Link to="/services" className="footer-link">Our Services</Link>
-                </li>
-                <li className="flex items-center">
-                  <ChevronRight className="w-4 h-4 mr-2 text-white" />
-                  <Link to="/testimonials" className="footer-link">Testimonials</Link>
+                  <Link to="/blog" className="footer-link">Blogs</Link>
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2 text-white" />
@@ -290,19 +287,23 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2 text-white" />
-                  <Link to="/services/freezer-box" className="footer-link">Dead Body Freezer Box</Link>
+                  <Link to="/services/dead-body-freezer-box" className="footer-link">Dead Body Freezer Box</Link>
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2 text-white" />
-                  <Link to="/services/funeral" className="footer-link">Funeral Services</Link>
+                  <Link to="/services/funeral-services" className="footer-link">Funeral Services</Link>
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2 text-white" />
-                  <Link to="/services/memorial" className="footer-link">Memorial Services</Link>
+                  <Link to="/services/ambulance-services" className="footer-link">Ambulance Services</Link>
                 </li>
                 <li className="flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2 text-white" />
-                  <Link to="/services/grief-support" className="footer-link">Grief Support</Link>
+                  <Link to="/services/embalming-services" className="footer-link">Embalming Services</Link>
+                </li>
+                  <li className="flex items-center">
+                  <ChevronRight className="w-4 h-4 mr-2 text-white" />
+                  <Link to="/services/prayer-meetings" className="footer-link">Prayer Meetings</Link>
                 </li>
               </ul>
             </div>
@@ -317,19 +318,19 @@ const Footer = () => {
                 <li className="contact-item flex items-start">
                   <Phone className="contact-icon w-5 h-5 mr-3 mt-0.5 text-white" />
                   <div>
-                    <a href="tel:+15551234567" className="footer-text">+91 99999999</a>
+                    <a href="tel:+917050988589" className="footer-text">+91 7050988589</a>
                     <p className="footer-text-muted text-sm">Mon-Fri: 9am-6pm</p>
                   </div>
                 </li>
                 <li className="contact-item flex items-start">
                   <Mail className="contact-icon w-5 h-5 mr-3 mt-0.5 text-white" />
-                  <a href="mailto:info@funeralservices.com" className="footer-text">info@ncrfuneralservice.com</a>
+                  <a href="mailto:info@primerescue.com" className="footer-text">info@primerescue.com</a>
                 </li>
                 <li className="contact-item flex items-start">
                   <MapPin className="contact-icon w-5 h-5 mr-3 mt-0.5 text-white" />
                   <div className="footer-text">
-                    <p>noida</p>
-                    <p className="footer-text-muted">City, State 12345</p>
+                    <p>Galaxy Diamond Plaza</p>
+                    <p className="footer-text-muted">Noida,UP</p>
                   </div>
                 </li>
               </ul>
@@ -364,7 +365,7 @@ const Footer = () => {
           <div className="border-t border-white/10 pt-8">
             <div className="flex flex-col md:flex-row justify-center items-center">
               <p className="footer-text-muted text-sm mb-4 md:mb-0">
-                © {currentYear} NCR Funeral & Deadbody Freezerbox. All rights reserved.
+                © {currentYear} Primerescue. All rights reserved.
               </p>
           
             </div>

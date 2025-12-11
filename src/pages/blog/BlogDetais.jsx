@@ -34,15 +34,7 @@ export default function BlogDetail() {
   return (
     <div className="min-h-screen bg-gray-50 mt-16 md:mt-20">
       {/* Back Button - Sticky at top */}
-      <div className="sticky top-0 z-10 bg-white/80 backdrop-blur-sm px-4 sm:px-6 border-b border-gray-200 py-3">
-        <button
-          onClick={() => navigate("/blog")}
-          className="flex items-center gap-2 text-gray-700 p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300"
-        >
-          <ArrowLeft size={18} />
-          <span className="font-medium hidden sm:inline">Back to Blog</span>
-        </button>
-      </div>
+    
 
       {/* Banner Image Section */}
       <div className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] max-h-[800px] w-full overflow-hidden">

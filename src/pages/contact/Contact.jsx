@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send, Calendar, Clock } from "lucide-react";
+  import FAQ from "./Faq";
 
 export default function ContactPage() {
   const [form, setForm] = useState({
@@ -116,7 +117,7 @@ export default function ContactPage() {
               onClick={() => !isPastDate(date) && handleDateChange(date.toISOString().split('T')[0])}
               disabled={isPastDate(date)}
               className={`
-                p-1 sm:p-2 text-xs sm:text-sm rounded hover:bg-[#09a3db]/10 transition-colors
+                p-1 sm:p-2 text-xs sm:text-sm rounded transition-colors
                 ${isToday(date) ? 'bg-[#1e5a94]/20 text-[#09a3db] font-semibold' : ''}
                 ${!isCurrentMonth(date) ? 'text-gray-300' : 'text-gray-700'}
                 ${isPastDate(date) ? 'text-gray-300 cursor-not-allowed' : 'hover:bg-[#09a3db]/10'}
@@ -135,26 +136,34 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 mt-1">
-      <div
-        className="relative h-[60vh] sm:h-[70vh] md:h-[85vh] flex items-center justify-start bg-fixed bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/banner/banner5.png')",
-        }}
-      >
-        <div className="absolute inset-0 z-10"></div>
-        <div className="relative text-white z-20 text-left px-4 sm:px-8 md:px-16 lg:px-24 max-w-7xl">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 lg:mb-10 drop-shadow-xl font-serif">
-            Contact <span className="text-blue-300">Us</span>
-          </h1>
-           <div className="h-1 w-20 bg-blue-300 mb-4 sm:mb-6"></div>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-100 max-w-2xl">
-            We're here to provide compassionate support and professional guidance during your time of need. Reach out to our caring team 24/7.
-          </p>
-        </div>
-      </div>
+
+{/* ------------------ UPDATED BANNER HEIGHT ------------------ */}
+<div
+  className="relative inset-0 
+  h-[60vh] sm:h-[55vh] md:h-[75vh] lg:h-[90vh] xl:h-[93vh] 
+  flex items-center justify-start 
+  bg-fixed bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/banner/banner5.png')",
+  }}
+>
+  <div className="absolute inset-0 z-10"></div>
+
+  <div className="relative text-white z-20 text-left px-4 sm:px-8 md:px-16 lg:px-24 max-w-7xl mt-10">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 lg:mb-10 drop-shadow-xl font-serif">
+      Contact <span className="text-blue-300">Us</span>
+    </h1>
+    <div className="h-1 w-20 bg-blue-300 mb-4 sm:mb-6"></div>
+    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-100 max-w-2xl">
+      We're here to provide compassionate support and professional guidance during your time of need. Reach out to our caring team 24/7.
+    </p>
+  </div>
+</div>
+{/* ------------------------------------------------------------ */}
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-8 sm:pb-12 md:pb-16 lg:pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 items-stretch">
+          
           {/* Image Section */}
           <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl shadow-xl order-2 lg:order-1">
             <img
@@ -174,15 +183,15 @@ export default function ContactPage() {
               <div className="mt-4 sm:mt-6 flex flex-wrap gap-2 sm:gap-3">
                 <a
                   href="tel:+911234567890"
-                  className="inline-flex items-center gap-1 sm:gap-2 rounded-full bg-[#1e5a94]/30 px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm hover:bg-[#1e5a94]/60 transition"
+                  className="inline-flex items-center gap-1 sm:gap-2 rounded-full bg-[#1e5a94]/40 px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm hover:bg-[#1e5a94]/60 transition"
                 >
-                  <Phone size={14} className="sm:w-4 sm:h-4" /> +91-1234567890
+                  <Phone size={14} className="sm:w-4 sm:h-4" /> +91-7050988589
                 </a>
                 <a
                   href="mailto:info@funeralservices.com"
-                  className="inline-flex items-center gap-1 sm:gap-2 rounded-full bg-[#1e5a94]/30 px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm hover:bg-[#1e5a94]/60 transition"
+                  className="inline-flex items-center gap-1 sm:gap-2 rounded-full bg-[#1e5a94]/40 px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm hover:bg-[#1e5a94]/60 transition"
                 >
-                  <Mail size={14} className="sm:w-4 sm:h-4" /> info@funeralservices.com
+                  <Mail size={14} className="sm:w-4 sm:h-4" /> info@primerescue.com
                 </a>
               </div>
             </div>
@@ -212,6 +221,7 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <div className="space-y-3 sm:space-y-4">
+                  
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                     <div>
                       <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
@@ -363,7 +373,9 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
+<section>
+  <FAQ/>
+</section>
       {/* Map Section */}
       <div className="px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900  mb-3 sm:mb-4 md:mb-5 font-serif">Find<span className="text-[#09a3db]"> Our Facility</span></h2>
@@ -371,10 +383,11 @@ export default function ContactPage() {
           Visit our facility for professional funeral support and dead body freezer services.
         </p>
       </div>
+      
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 md:pb-20">
         <div className="overflow-hidden rounded-2xl sm:rounded-3xl shadow-xl">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448465.9328569838!2d77.4460194!3d28.5805681!2m3!1f0i1024!2i768!4f13.1!3m3!1m2!1s0x390cef14967d291b%3A0x48c2cba247c405ea!2sJK%20Digital%20Photo%20Studio%20Noida!5e0!3m2!1sen!2sin!4v1756294586165!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.4885965660637!2d77.42505777422211!3d28.61511498487364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee4b84f5f3c9%3A0xe777ade91770844c!2sCity%20Plaza%2C%20FF156%2C%20Gaur%20City%201%20Rd%2C%20Gaur%20City%201%2C%20Sector%204%2C%20Noida%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201016!5e0!3m2!1sen!2sin!4v1765444556967!5m2!1sen!2sin"
             width="100%"
             height="300"
             className="sm:h-[350px] md:h-[400px] lg:h-[450px]"

@@ -189,7 +189,7 @@ export default function FuneralHomePage() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-2 sm:gap-4 lg:gap-6 pt-4 sm:pt-6">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 lg:gap-6 pt-4 sm:pt-6 mb-4">
                 {[
                   { title: "5+ Years", subtitle: "Experience" },
                   { title: "Licensed &", subtitle: "Certified" },
@@ -197,7 +197,7 @@ export default function FuneralHomePage() {
                 ].map((stat, index) => (
                   <div
                     key={index}
-                    className="group relative bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
+                    className="group relative bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
                   >
                     <div className="absolute top-0 right-0 w-16 h-16 sm:w-20 sm:h-20 bg-blue-50 rounded-full -mr-8 -mt-8 sm:-mr-10 sm:-mt-10 group-hover:scale-150 transition-transform duration-500"></div>
                     <div className="absolute inset-0 bg-gradient-to-br from-[#09a3db]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -303,26 +303,26 @@ export default function FuneralHomePage() {
       >
         <div className="absolute inset-0 bg-[url('/c1.jpg')] bg-cover bg-center"></div>
         <div className="relative z-10 max-w-7xl mx-auto flex justify-end">
-          <div className="bg-white/50 backdrop-blur-lg rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-2xl border border-white/20 max-w-xl lg:max-w-2xl w-full">
+          <div className="bg-white/50 backdrop-blur-lg rounded-xl mr-7 sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-2xl border border-white/20 max-w-xl lg:max-w-2xl w-full">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-4 sm:gap-6">
               <div className="text-center lg:text-left">
                 <div className="flex items-center gap-3 mb-2">
-                  <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-[#e24065]" />
+                
                   <span className="bg-white/20 backdrop-blur-sm text-[#e24065] rounded-full px-3 py-1 text-xs sm:text-sm font-semibold">
                     Available 24/7
                   </span>
                 </div>
-                <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#e24065] mb-1">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#09a3db] mb-1">
                   We're Here For You
                 </h2>
-                <p className="text-[#09a3db] text-sm sm:text-base">
+                <p className="text-white text-sm sm:text-base">
                   Compassionate support when you need it most
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
                 <a href="tel:+917050988589">
-                  <button className="bg-transparent border-2 border-white/50 text-white px-5 py-2 sm:py-3 rounded-full font-semibold hover:bg-white/10 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base w-full sm:w-auto">
+                  <button className="bg-[#e24065] border-2 border-white/50 text-white px-5 py-2 sm:py-3 rounded-full font-semibold hover:bg-white/10 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base w-full sm:w-auto">
                     <Phone className="w-4 h-4" />
                     Call Us
                   </button>
@@ -330,7 +330,7 @@ export default function FuneralHomePage() {
               </div>
             </div>
 
-            <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-white/20 flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 text-white text-xs sm:text-sm">
+            <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-white/20 flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 text-[#e24065] text-xs sm:text-sm">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
                 <span>+91 7050988589</span>
