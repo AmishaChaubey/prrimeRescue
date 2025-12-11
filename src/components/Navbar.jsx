@@ -21,42 +21,42 @@ export default function FuneralNavbar() {
       slug: 'dead-body-freezer-box',
       icon: <Snowflake className="w-5 h-5" />,
       color: 'from-blue-400 to-blue-600',
-      description: 'Professional refrigeration services for dignified preservation'
+     
     },
     {
       title: 'Funeral Services',
       slug: 'funeral-services',
       icon: <Heart className="w-5 h-5" />,
       color: 'from-red-400 to-red-600',
-      description: 'Complete funeral arrangements with respect and care'
+     
     },
     {
       title: 'Ambulance Services',
       slug: 'ambulance-services',
       icon: <Flame className="w-5 h-5" />,
       color: 'from-orange-400 to-orange-600',
-      description: 'Prompt and respectful transportation services'
+     
     },
     {
       title: 'ICU Ambulance Services',
       slug: 'icu-ambulance-services',
       icon: <PlusCircle className="w-5 h-5" />,
       color: 'from-red-400 to-red-600',
-      description: 'Advanced ICU-equipped ambulances for critical care patients.'
+     
     },
     {
       title: 'Embalming Services',
       slug: 'embalming-services',
       icon: <Cross className="w-5 h-5" />,
       color: 'from-gray-400 to-gray-600',
-      description: 'Professional embalming and preservation services with dignity.'
+     
     },
     {
       title: 'Prayer Meetings',
       slug: 'prayer-meetings',
       icon: <Users className="w-5 h-5" />,
       color: 'from-blue-400 to-blue-600',
-      description: 'Organizing respectful prayer meetings and gatherings.'
+     
     }
   ];
 
@@ -140,22 +140,31 @@ export default function FuneralNavbar() {
                 </button>
 
                 <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-72 sm:w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden transition-all duration-300 ${servicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-4 pointer-events-none'}`}>
-                  <div className="p-2">
-                    {services.map((service, index) => (
-                      <Link 
-                        key={index} 
-                        to={`/services/${service.slug}`}
-                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition-all duration-300 group"
-                      >
-                        <div className={`bg-gradient-to-br ${service.color} p-2.5 rounded-xl text-white group-hover:scale-110 transition-transform duration-300 shadow-md`}>
-                          {service.icon}
-                        </div>
-                        <div className="flex-1">
-                          <h4 className="font-semibold text-gray-800 text-sm group-hover:text-[#09a3db] transition-colors duration-300">{service.title}</h4>
-                          <p className="text-xs text-gray-500 mt-0.5 leading-relaxed">{service.description}</p>
-                        </div>
-                      </Link>
-                    ))}
+                  {/* Scroll indicator for more services */}
+                  {services.length > 3 && (
+                    <div className="bg-gradient-to-b from-[#09a3db] to-[#2d8efa] text-white text-xs font-medium px-3 py-1.5 text-center">
+                      Scroll for more services
+                    </div>
+                  )}
+                  
+                  {/* Scrollable container with max height for 3 items */}
+                  <div className="max-h-80 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                    <div className="p-2">
+                      {services.map((service, index) => (
+                        <Link 
+                          key={index} 
+                          to={`/services/${service.slug}`}
+                          className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition-all duration-300 group"
+                        >
+                          <div className={`bg-gradient-to-br ${service.color} p-2.5 rounded-xl text-white group-hover:scale-110 transition-transform duration-300 shadow-md`}>
+                            {service.icon}
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-semibold text-gray-800 text-sm group-hover:text-[#09a3db] transition-colors duration-300 mt-2">{service.title}</h4>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>

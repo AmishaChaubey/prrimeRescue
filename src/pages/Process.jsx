@@ -106,7 +106,7 @@ const ProcessSection = () => {
             <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-[#09a3db] rounded-full mb-4">
               <Ambulance className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Emergency Medical <span className='text-[#09a3db]'> Response</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
@@ -173,7 +173,7 @@ const ProcessSection = () => {
             <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-[#e24065] rounded-full mb-4">
               <Flower2 className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Funeral Arrangement Process
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">

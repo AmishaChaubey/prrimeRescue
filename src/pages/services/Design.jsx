@@ -1,7 +1,10 @@
+// src/pages/services/ServiceLayout.jsx
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function ServiceLayout({ service }) {
+  const { slug } = useParams(); // Track current service slug
+
   const demoService = service || {
     heroImage:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=400&fit=crop",
@@ -50,9 +53,10 @@ export default function ServiceLayout({ service }) {
   const [selectedImage, setSelectedImage] = useState(null);
   const [activeProcessStep, setActiveProcessStep] = useState(0);
 
+  // Scroll to top whenever the service slug changes
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [slug]);
 
   return (
     <div className="min-h-screen bg-white">

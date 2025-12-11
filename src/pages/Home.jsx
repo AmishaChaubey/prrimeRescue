@@ -181,8 +181,8 @@ export default function FuneralHomePage() {
                 </div>
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                NCR Funeral Services & Dead Body{" "}
-                <span className="text-[#09a3db]">Freezer Box on Rent</span>
+                PrimeRescue – Redefining Funeral & {" "}
+                <span className="text-[#09a3db]">Freezer Box Services</span>
               </h2>
               <div className="space-y-3 sm:space-y-4 text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
                 <p>

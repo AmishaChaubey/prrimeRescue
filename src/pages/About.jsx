@@ -192,7 +192,7 @@ const AboutPage = () => {
                   key={index}
                   variants={fadeInUpVariants}
                   whileHover={{ y: -8 }}
-                  className="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 h-full"
+                  className="bg-white p-4 sm:p-6 md:p-8 md:ml-4 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 h-full"
                 >
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-[#09a3db]/10 to-[#09a3db]/20 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6">
                     {service.icon}
@@ -233,11 +233,11 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto">
           <AnimatedSection>
             <motion.div 
-              className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center"
+              className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ml-6"
               variants={staggerContainer}
             >
               <motion.div variants={fadeInUpVariants}>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-serif">Our Guiding <span className='text-[#09a3db]'>Principles</span> </h2>
+                <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-serif">Our Guiding <span className='text-[#09a3db]'>Principles</span> </h2>
                 <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-6 sm:mb-8">
                   At DignityCare, our work is guided by a deep commitment to compassion, integrity, and excellence.
                 </p>
