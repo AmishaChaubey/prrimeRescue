@@ -107,46 +107,60 @@ export default function FuneralHomePage() {
 
   return (
     // Changed from overflow-x-hidden to overflow-x-auto to allow horizontal scrolling if needed
-    <div className="bg-gray-50 min-h-screen">
+    <div className=" mt-8 min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[url('/banner/banner1.png')] bg-cover bg-center"></div>
-          <div className="absolute inset-0 bg-black opacity-50"></div>
-        </div>
+  <section className="relative h-screen flex items-center justify-center overflow-hidden">
+  {/* Background Video */}
+  <div className="absolute inset-0">
+    <video
+      className="absolute inset-0 w-full h-full object-cover"
+      src="/banner/banneer.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+    ></video>
+    <div className="absolute inset-0 bg-black opacity-50"></div>
+  </div>
 
-        <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-          <div className="mb-6 sm:mb-8 inline-block">
-            <div className="bg-white/10 backdrop-blur-md rounded-full px-4 sm:px-6 py-2 text-white text-xs sm:text-sm font-medium animate-pulse">
-              Available 24/7 for immediate assistance
-            </div>
-          </div>
-          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8 lg:mb-10 leading-tight">
-            Honoring Lives with{" "}
-            <span className="text-transparent bg-clip-text bg-[#09a3db]">
-              Dignity & Care
-            </span>
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-8 sm:mb-10 max-w-3xl mx-auto px-4">
-            Professional funeral services and advanced preservation solutions
-            available 24/7
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-            <Link to="/contact">
-              <button className="bg-white hover:bg-gray-100 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center justify-center gap-2 w-full sm:w-auto">
-                <Phone className="w-5 h-5" />
-                Contact Us
-              </button>
-            </Link>
-          </div>
-        </div>
+  {/* Content */}
+  <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    <div className="mb-6 sm:mb-8 inline-block">
+      <div className="bg-white/10 backdrop-blur-md rounded-full px-4 sm:px-6 py-2 text-white text-xs sm:text-sm font-medium animate-pulse">
+        Available 24/7 for immediate assistance
+      </div>
+    </div>
 
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
-          </div>
-        </div>
-      </section>
+    <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8 lg:mb-10 leading-tight">
+      Honoring Lives with{" "}
+      <span className="text-transparent bg-clip-text bg-[#09a3db]">
+        Dignity & Care
+      </span>
+    </h1>
+
+    <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-8 sm:mb-10 max-w-3xl mx-auto px-4">
+      Professional funeral services and advanced preservation solutions
+      available 24/7
+    </p>
+
+    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+      <Link to="/contact">
+        <button className="bg-white hover:bg-gray-100 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center justify-center gap-2 w-full sm:w-auto">
+          <Phone className="w-5 h-5" />
+          Contact Us
+        </button>
+      </Link>
+    </div>
+  </div>
+
+  {/* Scroll Indicator */}
+  <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+      <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+    </div>
+  </div>
+</section>
+
 
       {/* About Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
